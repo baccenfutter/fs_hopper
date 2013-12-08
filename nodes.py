@@ -119,6 +119,14 @@ class FileNode(BaseNode):
         fd = open(self.name, 'a')
         fd.close()
 
+    def delete(self):
+        """Delete this file"""
+        os.remove(self.name)
+
+    def basename(self):
+        """Obtain basename of file"""
+        return os.path.basename(self.name)
+
 
 class DirectoryNode(BaseNode):
     """Representation of a directory in the filesystem"""
@@ -178,3 +186,7 @@ class DirectoryNode(BaseNode):
         child = FileNode(name)
         child.create()
         return child
+
+    def delete(self):
+        """Delete this directory"""
+        os.rmdir(self.name)
