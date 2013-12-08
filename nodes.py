@@ -123,6 +123,10 @@ class FileNode(BaseNode):
         """Delete this file"""
         os.remove(self.name)
 
+    def basename(self):
+        """Obtain basename of file"""
+        return os.path.basename(self.name)
+
 
 class DirectoryNode(BaseNode):
     """Representation of a directory in the filesystem"""
