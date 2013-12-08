@@ -55,5 +55,5 @@ Read /etc/passwd
 Resources
 =========
 
-    * Github: https://gihub.com/baccenfutter/fs_hopper/
-    * PyPi  : https://pypi.python.org/pypi/FS-Hopper/
+- Github: https://gihub.com/baccenfutter/fs_hopper/
+- PyPi  : https://pypi.python.org/pypi/FS-Hopper/
